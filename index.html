@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="bg-[url(../images/design.png)] bg-cover bg-center">
+    <header class="flex flex-wrap .wit items-center justify-between  bg-blue-900 -100 px-4 py-16">
+        <span class="text-4xl font-bold">FLUXWAVE</span>
+
+        <input type="checkbox" id="menu-knop" class="peer sr-only" />
+        <label for="menu-knop"
+            class="cursor-pointer rounded-lg border border-gray-400 px-3 py-2 peer-focus-visible:outline-2 md:hidden">Menu</label>
+
+        <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+            <ul class="flex flex-col md:flex-row md:gap-4">
+                <li><a href="index.html" aria-current="page"
+                        class="block px-3 py-2 rounded-lg font-semibold text-blue-600 hover:bg-blue-200">Home</a>
+                </li>
+                <li><a href="project.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Projecten</a>
+                </li>
+                <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Portfolio</a>
+                </li>
+                <li><a href="contact.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class=" px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-8  ">
+
+            <main class="md:col-span-3  bg-blue-900 -100 p-8  rounded-lg">
+                <h1 class="text-3xl font-bold mb-4">Main</h1>
+                <section class="bg-white rounded-lg p-4 py-16 ">
+                    <h1 class="text-3xl font-bold mb-4 ">Over mij</h1>
+                    <p class=" leading-relaxed  ">Ik ben een gemotiveerde en
+                        nieuwsgierige
+                        persoon met
+                        een sterke interesse in netwerk- en systeembeheer. Ik heb bewust
+                        voor deze richting gekozen omdat ik graag wil begrijpen hoe technologie achter de schermen
+                        werkt.
+                        Ik wil mijn kennis verder uitbreiden op het gebied van switches, servers, netwerken en
+                        Linux-systemen. Vooral het
+                        ontdekken hoe verschillende systemen met elkaar communiceren en hoe je ze correct
+                        configureert en beheert, spreekt mij
+                        aan.
+                        Ik leer graag bij, ben niet bang om nieuwe dingen uit te proberen en zie problemen vooral
+                        als een kans om iets nieuws te
+                        leren. Mijn doel is om stap voor stap meer ervaring op te doen en mij verder te ontwikkelen
+                        binnen de IT-wereld.
+                    </p>
+                </section>
+
+                <div class="md:col-span-3 bg-white p-4 rounded-lg mt-4">
+                    <h1 class="text-3xl font-bold mb-4 ">Wat is netwerk- en systeembeheer?</h1>
+                    <div class=" p-4 ">
+                        Netwerk- en systeembeheer gaat over het onderhouden, beveiligen en goed laten samenwerken
+                        van computers en andere
+                        apparaten binnen een organisatie.
+                    </div>
+                </div>
+
+            </main>
+
+            <aside class="bg-blue-900 p-4 rounded-lg md:col-span-1">
+                <h2 class="font-bold mb-2 ">Aside</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-16">
+                        <h2 class="font-bold ">Skills</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-16">
+                        <h2 class="font-bold">Korte bio</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-16">
+                        <h2 class="font-bold">Social links</h2>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </div>
+
+    <footer class="border-t border-blue-200  bg-blue-900 -300 py-12 text-sm">
+        <p>&copy; 2026 FLUXWAVE — Portfolio</p>
+    </footer>
+
+
+
+</body>
+
+</html>

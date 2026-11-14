@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class=" flex flex-col bg-[url(../images/design.png)] bg-cover bg-center">
+    <header class="flex flex-wrap items-center justify-between  bg-blue-900 px-4 py-16">
+        <span class="text-4xl font-bold">FLUXWAVE</span>
+
+        <input type="checkbox" id="menu-knop" class="peer sr-only" />
+        <label for="menu-knop"
+            class="cursor-pointer rounded-lg border border-gray-400 px-3 py-2 peer-focus-visible:outline-2 md:hidden">Menu</label>
+
+        <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+            <ul class="flex flex-col md:flex-row md:gap-4">
+                <li><a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Home</a></li>
+                <li><a href="project.html" aria-current="page"
+                        class="block px-3  text-blue-600 py-2 rounded-lg font-semibold hover:bg-blue-200">Projecten</a>
+                </li>
+                <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Portfolio</a></li>
+                <li><a href="contact.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class=" px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 ">
+
+            <main class="md:col-span-3">
+                <h1 class="mb-4 text-2xl font-bold">Mijn projecten</h1>
+                <article class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+                    <img src="../images/logo.png" alt="Het netwerkrek van het thuisnetwerk" width="1200" height="800"
+                        class="aspect-video w-full object-cover" />
+                    <div class="p-4">
+                        <h2 class="mb-1 text-xl font-bold">Projecten</h2>
+                        <p class="leading-relaxed">
+                            Welkom op mijn projectenpagina! Op dit moment staat hier nog geen eindresultaat, omdat
+                            ik nog niet effectief begonnen
+                            ben met het bouwen van deze portfolio-website.
+                            Het maken van dit portfolio is namelijk een groot project waar we doorheen het hele
+                            schooljaar stap voor stap aan gaan
+                            werken. De komende tijd ga ik deze website helemaal zelf vanaf de basis opbouwen en
+                            vormgeven.
+                            Om dit te realiseren, gebruik ik Visual Studio Code als mijn vaste code-editor. De
+                            website zelf zal ik gaan schrijven
+                            met behulp van de volgende programmeertalen:
+                            • HTML: Voor het opbouwen van de basisstructuur en de inhoud van de pagina's.
+                            • CSS: Voor de volledige visuele opmaak, zoals het toepassen van mijn eigen huisstijl,
+                            de lay-out en de kleuren.
+                            • JavaScript / Java: Voor het toevoegen van extra functionaliteiten en interactieve
+                            elementen op de website.
+                            Omdat we hier het hele jaar door aan werken, zal deze website (en deze projectenpagina)
+                            de komende maanden steeds verder
+                            groeien en verbeteren. Kom dus zeker later nog eens terug om mijn voortgang en
+                            toekomstige projecten te bekijken!
+
+                        </p>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="bg-blue-900 p-4 rounded-lg md:col-span-1">
+                <h2 class="font-bold mb-2">Aside</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-40">
+                        <h2 class="font-bold">Technologieen</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-40">
+                        <h2 class="font-bold">18 / admin van de website</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-40">
+                        <h2 class="font-bold">Projectlink</h2>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </div>
+
+    <footer class="border-t border-blue-200 bg-blue-900 py-12 text-sm">
+        <p>&copy; 2026 FLUXWAVE — Portfolio</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class=" flex flex-col bg-[url(../images/design.png)] bg-cover bg-center">
+    <header class="flex flex-wrap items-center justify-between  bg-blue-900 -100 px-4 py-16">
+        <span class="text-4xl font-bold ">FLUXWAVE</span>
+
+        <input type="checkbox" id="menu-knop" class="peer sr-only" />
+        <label for="menu-knop"
+            class="cursor-pointer rounded-lg border border-gray-400 px-3 py-2 peer-focus-visible:outline-2 md:hidden">Menu</label>
+
+        <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+            <ul class="flex flex-col md:flex-row md:gap-4">
+                <li><a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Home</a></li>
+                <li><a href="project.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Projecten</a>
+                </li>
+                <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Portfolio</a>
+                </li>
+                <li><a href="contact.html" aria-current="page"
+                        class="block px-3 py-2 rounded-lg  text-blue-600 font-semibold hover:bg-blue-200">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-8">
+            <main class="md:col-span-3">
+                <h1 class="mb-4 text-2xl font-bold">Contact</h1>
+                <form action="#" method="get" class="grid gap-4 md:grid-cols-2 bg-white border rounded-lg p-4">
+                    <div>
+                        <label for="naam" class="block font-medium">naam <span class="text-red-700"
+                                aria-hidden="true">*</span></label>
+                        <input type="text" id="naam" name="naam" required autocomplete="name"
+                            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="mail" class="block font-medium">e-mail <span class="text-red-700"
+                                    aria-hidden="true">*</span></label>
+                            <input type="email" id="mail" name="email" required autocomplete="email"
+                                aria-describedby="mail-hulp"
+                                class="peer mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                            <p id="mail-hulp" class="mt-1 text-sm text-gray-600">Vul een e-mailadres in zoals
+                                naam@voorbeeld.be.
+                            </p>
+                            <p class="mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block">Dit
+                                e-mailadres
+                                klopt niet. Vul
+                                het in zoals naam@voorbeeld.be.</p>
+                        </div>
+
+
+                    </div>
+
+                    <div>
+                        <label for="gsm" class="block font-medium">gsm-nummer</label>
+                        <input type="tel" id="gsm" name="gsm" autocomplete="tel" pattern="04[0-9]{8}"
+                            title="Tien cijfers, beginnend met 04, zonder spaties" aria-describedby="gsm-hulp"
+                            class="mt-1 w-full rounded-lg border border-gray-400 px-3 py-2">
+                        <p id="gsm-hulp" class="mt-1 text-sm text-gray-600">Niet verplicht. Schrijf tien cijfers zonder
+                            spaties,
+                            bijvoorbeeld 0412345678.</p>
+                        <p class="mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block">schrijf je
+                            gsm-nummer
+                            zonder spaties: 0412345678
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <label for="onderwerp" class="block font-medium">Onderwerp</label>
+                        <select id="onderwerp" name="onderwerp"
+                            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-3 mb-5">
+                            <option value="">Maak een keuze</option>
+                            <option value="stage">Stage</option>
+                            <option value="project">Project</option>
+                            <option value="vraag">Een vraag</option>
+                        </select>
+                    </div>
+
+
+                    <div class="class= md:col-span-2 grid">
+
+
+
+
+                        <fieldset class="mb-10 rounded-lg border p-4 border-gray-400">
+                            <legend class="font-medium">Hoe wil je antwoord krijgen?</legend>
+                            <div class="mt-2 flex items-center gap-2">
+                                <input type="radio" id="via-mail" name="antwoord" value="mail" checked
+                                    class="size-5 accent-blue-700">
+                                <label for="via-mail">per e-mail</label>
+                            </div>
+                            <div class="mt-2 flex items-center gap-2">
+                                <input type="radio" id="via-tel" name="antwoord" value="telefoon" class="size-5
+    accent-blue-700">
+                                <label for="via-tel">per telefoon</label>
+                            </div>
+                        </fieldset>
+
+                        <div>
+                            <label for="bericht" class="block font-medium">je bericht <span class="text-red-700"
+                                    aria-hidden="true">*</span></label>
+                            <textarea id="bericht" name="bericht" rows="5" required minlength="10"
+                                aria-describedby="bericht-hulp"
+                                class="peer mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"></textarea>
+                            <p id="bericht-hulp" class="mt-1 text-sm text-gray-600">Schrijf minstens tien tekens.</p>
+                            <p class="mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block">Je bericht
+                                is te
+                                kort. Schrijf
+                                minstens tien tekens.</p>
+                        </div>
+
+                        <br>
+
+
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="toestemming" name="toestemming" value="ja" required
+                                class="size-5 accent-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                            <label for="toestemming">Ik gebruik je gegevens enkel om je te antwoorden.<span
+                                    class="text-red-700" aria-hidden="true">*</span></label>
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit"
+                        class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bgblue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue700">
+                        Verstuur
+                    </button>
+
+                    <a href="contact.html" class="inline-flex items-center gap-2 rounded-lg  bg-white-700 px-4 py-2 text-blue-600
+                        hover: bg-blue-900 -800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 "
+                            aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="m3 7 9 6 9-6" />
+                        </svg>
+                        Stuur me een mail
+                    </a>
+
+
+                    <a href="mailto:lotte.peeters@student.ap.be"
+                        class="inline-flex rounded-full p-2 text-blue-700 hover: bg-white -50">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6"
+                            aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="m3 7 9 6 9-6" />
+                        </svg>
+                        <span class="sr-only">Stuur me een e-mail</span>
+                    </a>
+
+                </form>
+
+
+            </main>
+
+            <aside class="bg-blue-900 p-4 rounded-lg md:col-span-1">
+                <h2 class="font-bold mb-2">Aside</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-8">
+                        <h2 class="font-bold ">E-mail</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-8">
+                        <h2 class="font-bold ">Locatie</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-8">
+                        <h2 class="font-bold ">Social media</h2>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="border-t border-blue-200  bg-blue-900 -300 py-12 text-sm ">
+            <p>&copy; 2026 FLUXWAVE — Portfolio</p>
+        </footer>
+
+
+</body>
+
+</html>

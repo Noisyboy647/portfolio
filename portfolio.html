@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class=" flex flex-col bg-[url(../images/design.png)] bg-cover bg-center md:col-span-1">
+    <header class="flex flex-wrap items-center justify-between  bg-blue-900 -100 px-4 py-16">
+        <span class="text-4xl font-bold">FLUXWAVE</span>
+
+        <input type="checkbox" id="menu-knop" class="peer sr-only" />
+        <label for="menu-knop"
+            class="cursor-pointer rounded-lg border border-gray-400 px-3 py-2 peer-focus-visible:outline-2 md:hidden">Menu</label>
+
+        <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+            <ul class="flex flex-col md:flex-row md:gap-4">
+                <li><a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Home</a></li>
+                <li><a href="project.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Projecten</a>
+                </li>
+                <li><a href="portfolio.html" aria-current="page"
+                        class="block px-3 py-2  text-blue-600 rounded-lg font-semibold hover:bg-blue-200">Portfolio</a>
+                </li>
+                <li><a href="contact.html" class="block px-3 py-2 rounded-lg hover:bg-blue-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class=" px-4 md:col-span-1">
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 ">
+
+            <main class="md:col-span-3  bg-blue-900 -100 p-8 rounded-lg">
+                <h1 class="text-2xl font-bold mb-4">Main</h1>
+                <h1 class="text-3xl font-bold mb-4">6 projecten</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+
+
+                    <article class="overflow-hidden rounded-lg border border-gray-200 bg-white
+                    shadow-sm">
+                        <img src="../images/servers.png" alt="Het netwerkrek van het thuisnetwerk" width="1200"
+                            height="800" class="aspect-video w-full object-cover">
+                        <div class="p-4">
+                            <h1 class="text-3xl font-bold mb-4">Project 1</h1>
+                            <p>Server Ruimte</p>
+                            <p>Zoals je kan is dit een server ruimte hier worden alle servers beheerd en onder
+                                controle gehouden</p>
+                        </div>
+                    </article>
+
+
+
+                    <article class="overflow-hidden rounded-lg border border-gray-200 bg-white
+                                        shadow-sm">
+                        <img src="./images/servers2.png" alt="Het netwerkrek van het thuisnetwerk" width="1200"
+                            height="800" class="aspect-video w-full object-cover">
+                        <div class="p-4">
+                            <h1 class="text-3xl font-bold mb-4">Project 2</h1>
+                            <p>Server ruimte</p>
+                            <p>Zoals je kan is dit een server ruimte hier worden alle servers beheerd en onder
+                                controle gehouden</p>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-lg border border-gray-200 bg-white
+                                                            shadow-sm">
+                        <img src="./images/wide.png" alt="Het netwerkrek van het thuisnetwerk" width="1200" height="800"
+                            class="aspect-video w-full object-cover">
+                        <div class="p-4">
+                            <h1 class="text-3xl font-bold mb-4">Project 3</h1>
+                            <p>afbeelding / thumbnail</p>
+                            <p>Korte omschrijving</p>
+                        </div>
+                    </article>
+
+
+                    <article class="overflow-hidden rounded-lg border border-gray-200 bg-white
+                                                                                shadow-sm">
+                        <img src="./images/kantoor.png" alt="Het netwerkrek van het thuisnetwerk" width="1200"
+                            height="800" class="aspect-video w-full object-cover">
+                        <div class="p-4">
+                            <h1 class="text-3xl font-bold mb-4">Project 4</h1>
+                            <p>Ons portfoliowebsite samen ontdekken</p>
+                            <p>Wij zullen je helpen met het ontdekken van een website en het aanmaken van één
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="overflow-hidden rounded-lg border border-gray-200 bg-white
+                                                                                                    shadow-sm">
+                        <img src="./images/design.png" alt="Het netwerkrek van het thuisnetwerk" width="1200"
+                            height="800" class="aspect-video w-full object-cover">
+                        <div class="p-4">
+                            <h1 class="text-3xl font-bold mb-4">Project 5</h1>
+                            <p>Design van serverbeheer</p>
+                            <p>Zoals jullie kunnen zien dit is het design van een serverbeheerruimte hier gaat
+                                meer uitleg over gegeven worden</p>
+                        </div>
+                    </article>
+
+
+
+                    <article
+                        class="overflow-hidden rounded-lg border border-gray-200 bg-white
+                                                                                                                        shadow-sm">
+                        <img src="./images/logo.png" alt="Het netwerkrek van het thuisnetwerk" width="1200" height="800"
+                            class="aspect-video w-full object-cover">
+                        <div class="p-4">
+                            <h1 class="text-3xl font-bold mb-4">Project 6</h1>
+                            <p>Logo Fluxwave</p>
+                            <p>Dit is het logo van mijn portfoliowebsite fluxwave (Later zal ik je uitleggen
+                                waarom dat hij zo noemt.)</p>
+                        </div>
+                    </article>
+
+
+
+
+                </div>
+            </main>
+
+            <aside class="bg-blue-900 p-4 rounded-lg md:col-span-1">
+                <h2 class="font-bold mb-2">Aside</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-70">
+                        <h2 class="font-bold">Categorieen</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-70">
+                        <h2 class="font-bold">Filters</h2>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg py-70">
+                        <h2 class="font-bold">Technologieen</h2>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </div>
+
+    <footer class="border-t border-blue-200  bg-blue-900 -300 py-12 text-sm ">
+        <p>&copy; 2026 FLUXWAVE — Portfolio</p>
+    </footer>
+</body>
+
+</html>
